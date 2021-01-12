@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.main_info {
+    width: 100%;
+    background-image: url(../img/top_pc-assets/main_bg.png);
+	overflow: hidden;
+}
+.main_info_inner {
+	width: 1050px;
+	margin: 0 auto;
+}
+
+.shops_list {
+	padding-top: 60px;
+	font-size: 0;
+	color: #9362c4;
+	margin-bottom:40px; 
+}
+.shops_list li {
+	font-size: 24px;
+	display: inline-block;
+	position: relative;
+	padding-left:70px;
+	line-height: 38px;
+	vertical-align: middle;
+	padding-right: 30px;
+	
+}
+.shops_list li::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: 0;
+	width: 38px;
+	height: 38px;
+	background-image: url("../img/top_pc-assets/shopsicon.png");
+	margin-left: 30px;
+}
+.shops_list li:first-child::before {
+	margin-left: 0;
+}
+.shops_list li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 1px;
+	-webkit-transform: skewX(150deg);
+	-moz-transform: skewX(150deg);
+	transform: skewX(150deg);
+	border-right: 1px solid #804e6b;
+	height: 60px;
+}
+.shops_list li:last-child::after {
+	border-right: none;
+}
+
+.shops_list_pic {
+	font-size: 0;
+}
+.shops_list_pic li {
+	display: inline-block;
+	width: 330px;
+	margin-left: 30px;
+}
+.shops_list_pic li:first-child {
+	margin-left: 0;
+}
+
+
+
+
+.main_address {
+	padding-top: 40px;
+	padding-bottom: 60px;
+	overflow: hidden;
+}
+.address {
+	width: 500px;
+	float: left;
+}
+.address table {
+	position: relative;
+}
+.address h2 {
+	font-size: 24px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #804e6b;
+	margin-bottom: 30px;
+}
+.address_list th {
+	font-size: 18px;
+	width: 100px;
+	padding-right: 25px;
+	padding-bottom: 50px;
+	text-align-last:justify;
+	vertical-align: middle;
+}
+.address_list tr th:last-child{
+	padding-bottom: 0;
+}
+.address_list td {
+	font-size: 18px;
+	font-weight:bold;
+	padding-left: 20px;
+
+}
+.address_list td::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 120px;
+	margin: auto;
+	border-left: 1px dotted #804e6b;
+	
+}
+.address_list td img {
+	margin-bottom: 5px;
+	
+}
+
+.tel_icon {
+	display: inline-block;
+	padding-bottom: 20px;
+}
+
+
+
+.line span {
+	font-size: 12px;
+	display: inline-block;
+	line-height: 18px;
+	padding-right: 20px;
+	vertical-align: middle;
+}
+
+.tel {
+	font-size: 47px;
+	display: inline-block;
+	margin-top: -105px;
+	vertical-align: middle;
+	padding-left: 43px;
+	
+}
+
+.map {
+	float: right;
+}
+.ginza {
+
+}
+.kyoto {
+	display: none;
+}
+.nihonbashi {
+	display: none;
+}
