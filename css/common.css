@@ -1,35 +1,43 @@
-@charset "UTF-8";
-/* CSS Document */
-
-body {
+/*共通設定*/
+body{
     font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
-p, a, span {
+
+p,a,span{
     font-size: 14px;
 }
-a {
+
+a{
     text-decoration: none;
 }
-.clearfix::after {
-    content: "";
+
+.clearfix::after{
+    content: '';
     clear: both;
     display: block;
 }
+
+.main_info{
+    width: 100%;
+    background-image: url("../img/main_bg.png")/*背景画像*/
+}
+
+/*メディクリエ*/
 /*pcスタイル*/
-@media screen and  (min-width: 681px) {
-  .sp_none {
-    display: block;/*pcでは表示*/
-  }
-  .pc_none {
-    display: none;/*pcでは非表示*/
-  }
+@media screen and (min-width:641px){
+    .sp_none{
+        display: inline-block;/*pcでは表示*/
+    }
+    .pc_none{
+        display: none;/*pcでは非表示*/
+    }
 }
 /*spスタイル*/
-@media screen and  (max-width: 680px) {
-  .sp_none {
-    display: none;/*spでは非表示*/
-  }
-  .pc_none {
-    display: block;/*spでは表示*/
-  }
+@media screen and (max-width:640px){
+    .sp_none{
+        display: none;/*spでは非表示*/
+    }
+    .pc_none{
+        display: inline-block;/*spでは表示*/
+    }
 }

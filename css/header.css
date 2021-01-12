@@ -1,50 +1,95 @@
-@charset "UTF-8";
-/* CSS Document */
 /*header*/
-.header {
-    width: 100%;
-    height: 100px;
-    background-color: #9362c4;
+/*pcスタイル*/
+@media screen and (min-width:641px){
+    .header{
+        width: 100%;
+        height: 100px;
+        background-color: #9362c4;
+    }
+    
+    .header_inner{
+        margin: 0 auto;
+        padding: 35px 0 0 50px;
+        width: 1160px;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    
+    .head_logo{
+        float: left;
+    }
+    
+    .head_nav{
+        float: right;
+        margin-top: 15px;
+        font-size: 0;
+    }
+    
+    .head_nav li{
+        position: relative;
+        display: inline-block;
+        margin-left: 15px;
+        padding-right: 15px;
+        vertical-align: middle;/*文字上下中央揃え*/
+    }
+    
+    .head_nav li::after{
+        content: '';
+        position: absolute;
+        top:0;
+        bottom: 0;
+        right: 0;
+        margin:auto;
+        width: 1pt;
+        height: 20px;
+        background: #804e6b;
+    }
+    
+    .head_nav li:last-child{
+        padding-right: 0;
+    }
+    
+    .head_nav li:last-child::after{
+        display: none;
+    }
+    
+    .head_nav li a{
+        color: #fff;
+    }
 }
-.head_logo {
-    float: left;
-}
-.head_nav {
-    float: right;
-    font-size: 0;
-    margin-top: 15px;
-}
-.head_nav li{
-    position: relative;
-    display: inline-block;
-    margin-left: 15px;
-    padding-right: 15px;
-    vertical-align: middle;
-}
-.head_nav li::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    width: 1px;
-    height: 20px;
-    background-color: #804e6b;
-}
-.head_nav li:last-child::after {
-    display: none;
-}
-.head_nav li:last-child {
-    padding-right: 0;
-}
-.header_inner {
-    margin: 0 auto;
-    padding: 35px 0 0 50px;
-    width: 1160px;
-    height: 100%;
-    box-sizing: border-box;
-}
-.head_nav li a {
-    color: #fff;
+
+
+
+/*spスタイル*/
+@media screen and (max-width:640px){
+    .header{
+        width: 100%;
+        height: 40px;
+        background-color: #9362c4;
+    }
+
+    .header_inner{
+        margin: 0 auto;
+        padding-top: 10px;
+        width: 290px;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .head_logo{
+        float: left;
+    }
+
+    .head_logo img{
+        width: 179px;
+    }
+
+    .head_nav{
+        float: right;
+        font-size: 0;
+    }
+
+    .head_nav img{
+        width: 30px;
+    }
 }
